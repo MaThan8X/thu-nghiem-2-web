@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const apiUrlInput = document.getElementById('apiUrl');
   const output      = document.getElementById('output');
   const errorMsg    = document.getElementById('errorMsg');
-  const PROXY_BASE  = 'http://localhost:8080/?url=';
+  const PROXY_BASE = 'https://steady-tarsier-066280.netlify.app/.netlify/functions/proxy?url=';
+
 
   async function fetchAndDisplay() {
     const rawUrl = apiUrlInput.value.trim();
