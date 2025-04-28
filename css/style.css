@@ -1,0 +1,67 @@
+/* Đặt font và nền chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Khung chứa chính */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Tiêu đề */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Vùng điều khiển URL và nút Fetch */
+  .controls {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  #apiUrl {
+    flex: 1;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button#fetchBtn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    background-color: #007acc;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button#fetchBtn:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Thông báo lỗi */
+  .error {
+    color: #b00020;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+  
+  /* Vùng hiển thị JSON */
+  pre#output {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 12px;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
